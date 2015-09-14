@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resource_file type="ShaderMaterial" subresource_count="2" version="1.1" version_name="Godot Engine v1.1.stable.d3b42e41b0">
+	<ext_resource path="res://norelease/shader/graphs/shader_rimLightAnimated.sgp" type="Shader"></ext_resource>
+	<main_resource>
+		<bool name="flags/visible"> True </bool>
+		<bool name="flags/double_sided"> False </bool>
+		<bool name="flags/invert_faces"> False </bool>
+		<bool name="flags/unshaded"> False </bool>
+		<bool name="flags/on_top"> False </bool>
+		<bool name="flags/lightmap_on_uv2"> True </bool>
+		<bool name="flags/colarray_is_srgb"> False </bool>
+		<int name="params/blend_mode"> 0 </int>
+		<int name="params/depth_draw"> 1 </int>
+		<real name="params/line_width"> 0 </real>
+		<resource name="shader/shader" resource_type="Shader" path="../../norelease/shader/graphs/shader_rimLightAnimated.sgp">  </resource>
+		<nil name="shader_param/cramp_5">  </nil>
+
+	</main_resource>
+</resource_file>

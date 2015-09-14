@@ -1,0 +1,14 @@
+{
+    "__init__": [
+        "syscheck",
+        "gui",
+        "sys",
+        "imp",
+        "os",
+        "time",
+        "json"
+    ],
+    "gui": [
+        "node"
+    ]
+}

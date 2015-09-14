@@ -1,0 +1,51 @@
+# Blender MTL File: 'proj_acc_assets_01.blend'
+# Material Count: 5
+
+newmtl Desktop:HighPolyEyes:Eye_brown
+Ns 1000.000000
+Ka 0.000000 0.000000 0.000000
+Kd 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd C:\\Users\\The Environment Guy\\Desktop\\textures\\brown_eye.png
+map_d C:\\Users\\The Environment Guy\\Desktop\\textures\\brown_eye.png
+
+newmtl Desktop:Skin
+Ns 960.784314
+Ka 0.000000 0.000000 0.000000
+Kd 0.843000 0.639000 0.517000
+Ks 0.300000 0.300000 0.300000
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl Desktop:short01:short01blacksatin
+Ns 600.000000
+Ka 0.000000 0.000000 0.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Bump C:\\Users\\The Environment Guy\\Desktop\\textures\\short01_normals.png
+map_Kd C:\\Users\\The Environment Guy\\Desktop\\textures\\short01_black_diffuse.png
+map_d C:\\Users\\The Environment Guy\\Desktop\\textures\\short01_black_diffuse.png
+
+newmtl None
+Ns 0
+Ka 0.000000 0.000000 0.000000
+Kd 0.8 0.8 0.8
+Ks 0.8 0.8 0.8
+d 1
+illum 2
+
+newmtl check
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2

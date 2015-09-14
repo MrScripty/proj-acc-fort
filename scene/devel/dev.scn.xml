@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resource_file type="PackedScene" subresource_count="13" version="1.1" version_name="Godot Engine v1.1.stable.d3b42e41b0">
+	<ext_resource path="res://script/scene/scn_dev.gd" type="Script"></ext_resource>
+	<ext_resource path="res://scene/subScene/character/char_player.xml" type="PackedScene"></ext_resource>
+	<ext_resource path="res://material/worldEnvironment/wen_dev.xml" type="Environment"></ext_resource>
+	<ext_resource path="res://material/material/mat_dock_pier.mtl" type="Material"></ext_resource>
+	<ext_resource path="res://mesh/docks/pier/msh_dock_pier_02.msh" type="Mesh"></ext_resource>
+	<ext_resource path="res://mesh/docks/pier/msh_dock_pier_01.msh" type="Mesh"></ext_resource>
+	<ext_resource path="res://mesh/docks/stair/msh_dock_stairs_01.msh" type="Mesh"></ext_resource>
+	<ext_resource path="res://mesh/docks/pier/msh_dock_pier45_01.msh" type="Mesh"></ext_resource>
+	<ext_resource path="res://script/scene/scr_terrainChunkLoader.gd" type="Script"></ext_resource>
+	<ext_resource path="res://material/material/mat_basicGrey_fresnel.xml" type="Material"></ext_resource>
+	<resource type="FixedMaterial" path="local://1">
+		<bool name="flags/visible"> True </bool>
+		<bool name="flags/double_sided"> False </bool>
+		<bool name="flags/invert_faces"> False </bool>
+		<bool name="flags/unshaded"> False </bool>
+		<bool name="flags/on_top"> False </bool>
+		<bool name="flags/lightmap_on_uv2"> True </bool>
+		<bool name="flags/colarray_is_srgb"> True </bool>
+		<int name="params/blend_mode"> 0 </int>
+		<int name="params/depth_draw"> 1 </int>
+		<real name="params/line_width"> 0 </real>
+		<bool name="fixed_flags/use_alpha"> False </bool>
+		<bool name="fixed_flags/use_color_array"> False </bool>
+		<bool name="fixed_flags/use_point_size"> False </bool>
+		<bool name="fixed_flags/discard_alpha"> False </bool>
+		<bool name="fixed_flags/use_xy_normalmap"> False </bool>
+		<color name="params/diffuse"> 1, 1, 1, 1 </color>
+		<color name="params/specular"> 0, 0, 0, 1 </color>
+		<color name="params/emission"> 0, 0, 0, 1 </color>
+		<int name="params/specular_exp"> 40 </int>
+		<real name="params/detail_mix"> 1 </real>
+		<int name="params/normal_depth"> 1 </int>
+		<int name="params/shader"> 0 </int>
+		<real name="params/shader_param"> 0.5 </real>
+		<int name="params/glow"> 0 </int>
+		<real name="params/point_size"> 1 </real>
+		<transform name="uv_xform"> 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 </transform>
+		<resource name="textures/diffuse"></resource>		<int name="textures/diffuse_tc"> 0 </int>
+		<resource name="textures/detail"></resource>		<int name="textures/detail_tc"> 0 </int>
+		<resource name="textures/specular"></resource>		<int name="textures/specular_tc"> 0 </int>
+		<resource name="textures/emission"></resource>		<int name="textures/emission_tc"> 0 </int>
+		<resource name="textures/specular_exp"></resource>		<int name="textures/specular_exp_tc"> 0 </int>
+		<resource name="textures/glow"></resource>		<int name="textures/glow_tc"> 0 </int>
+		<resource name="textures/normal"></resource>		<int name="textures/normal_tc"> 0 </int>
+		<resource name="textures/shade_param"></resource>		<int name="textures/shade_param_tc"> 0 </int>
+
+	</resource>
+	<resource type="BoxShape" path="local://2">
+		<vector3 name="extents"> 1, 1, 1 </vector3>
+
+	</resource>
+	<main_resource>
+		<dictionary name="_bundled" shared="false">
+			<string> "conn_count" </string>
+			<int> 0 </int>
+			<string> "conns" </string>
+			<int_array  len="0"> 				 </int_array>
+			<string> "names" </string>
+			<string_array  len="74">
+				<string> "spt_dev_scn" </string>
+				<string> "Spatial" </string>
+				<string> "_import_path" </string>
+				<string> "_import_transform" </string>
+				<string> "visibility/visible" </string>
+				<string> "script/script" </string>
+				<string> "__meta__" </string>
+				<string> "act_player" </string>
+				<string> "KinematicBody" </string>
+				<string> "transform/local" </string>
+				<string> "DirectionalLight" </string>
+				<string> "layers" </string>
+				<string> "params/enabled" </string>
+				<string> "params/editor_only" </string>
+				<string> "params/bake_mode" </string>
+				<string> "params/energy" </string>
+				<string> "colors/diffuse" </string>
+				<string> "colors/specular" </string>
+				<string> "shadow/shadow" </string>
+				<string> "shadow/darkening" </string>
+				<string> "shadow/z_offset" </string>
+				<string> "shadow/z_slope_scale" </string>
+				<string> "shadow/esm_multiplier" </string>
+				<string> "shadow/blur_passes" </string>
+				<string> "projector" </string>
+				<string> "operator" </string>
+				<string> "shadow/mode" </string>
+				<string> "shadow/max_distance" </string>
+				<string> "shadow/split_weight" </string>
+				<string> "shadow/zoffset_scale" </string>
+				<string> "wen_dev" </string>
+				<string> "WorldEnvironment" </string>
+				<string> "environment" </string>
+				<string> "spt_dock" </string>
+				<string> "msh_dock_pier_02" </string>
+				<string> "MeshInstance" </string>
+				<string> "geometry/visible" </string>
+				<string> "geometry/material_override" </string>
+				<string> "geometry/cast_shadow" </string>
+				<string> "geometry/receive_shadows" </string>
+				<string> "geometry/range_begin" </string>
+				<string> "geometry/range_end" </string>
+				<string> "geometry/extra_cull_margin" </string>
+				<string> "geometry/billboard" </string>
+				<string> "geometry/billboard_y" </string>
+				<string> "geometry/depth_scale" </string>
+				<string> "geometry/visible_in_all_rooms" </string>
+				<string> "geometry/use_baked_light" </string>
+				<string> "geometry/baked_light_tex_id" </string>
+				<string> "mesh/mesh" </string>
+				<string> "mesh/skeleton" </string>
+				<string> "msh_dock_pier_01" </string>
+				<string> "msh_dock_stair_01" </string>
+				<string> "msh_dock_pier45_01" </string>
+				<string> "msh_dock_pier_3" </string>
+				<string> "msh_dock_pier_2" </string>
+				<string> "spt_terrain" </string>
+				<string> "TestCube" </string>
+				<string> "TestCube 2" </string>
+				<string> "msh_floor" </string>
+				<string> "StaticBody" </string>
+				<string> "input/ray_pickable" </string>
+				<string> "input/capture_on_drag" </string>
+				<string> "shape_count" </string>
+				<string> "shapes/0/shape" </string>
+				<string> "shapes/0/transform" </string>
+				<string> "shapes/0/trigger" </string>
+				<string> "friction" </string>
+				<string> "bounce" </string>
+				<string> "constant_linear_velocity" </string>
+				<string> "constant_angular_velocity" </string>
+				<string> "CollisionShape" </string>
+				<string> "shape" </string>
+				<string> "trigger" </string>
+			</string_array>
+			<string> "node_count" </string>
+			<int> 17 </int>
+			<string> "nodes" </string>
+			<int_array  len="591"> 				-1, -1, 1, 0, -1, 5, 2, 0, 3, 1, 4, 2, 5, 3, 6, 4, 0, 0, 0, 8, 7, 5, 4, 2, 0, 3, 1, 9, 6, 6, 7, 0, 1, 0, 10, 10, -1, 23, 2, 0, 3, 1, 9, 8, 4, 2, 11, 9, 12, 2, 13, 10, 14, 11, 15, 12, 16, 13, 17, 14, 18, 2, 19, 15, 20, 16, 21, 15, 22, 17, 23, 15, 24, 18, 25, 11, 26, 19, 27, 20, 28, 21, 29, 22, 0, 0, 0, 31, 30, -1, 4, 2, 0, 3, 1, 4, 2, 32, 23, 0, 0, 0, 1, 33, -1, 4, 2, 0, 3, 1, 4, 2, 6, 24, 0, 4, 0, 35, 34, -1, 20, 2, 0, 3, 1, 9, 25, 4, 2, 11, 9, 36, 2, 37, 26, 38, 2, 39, 2, 40, 15, 41, 15, 42, 15, 43, 10, 44, 10, 45, 10, 46, 10, 47, 10, 48, 11, 49, 27, 50, 28, 0, 4, 0, 35, 51, -1, 19, 2, 0, 3, 1, 4, 2, 11, 9, 36, 2, 37, 26, 38, 2, 39, 2, 40, 15, 41, 15, 42, 15, 43, 10, 44, 10, 45, 10, 46, 10, 47, 10, 48, 11, 49, 29, 50, 28, 0, 4, 0, 35, 52, -1, 19, 2, 0, 3, 1, 4, 2, 11, 9, 36, 2, 37, 26, 38, 2, 39, 2, 40, 15, 41, 15, 42, 15, 43, 10, 44, 10, 45, 10, 46, 10, 47, 10, 48, 11, 49, 30, 50, 28, 0, 4, 0, 35, 53, -1, 19, 2, 0, 3, 1, 4, 2, 11, 9, 36, 2, 37, 26, 38, 2, 39, 2, 40, 15, 41, 15, 42, 15, 43, 10, 44, 10, 45, 10, 46, 10, 47, 10, 48, 11, 49, 31, 50, 28, 0, 4, 0, 35, 54, -1, 20, 2, 0, 3, 1, 9, 32, 4, 2, 11, 9, 36, 2, 37, 26, 38, 2, 39, 2, 40, 15, 41, 15, 42, 15, 43, 10, 44, 10, 45, 10, 46, 10, 47, 10, 48, 11, 49, 27, 50, 28, 0, 4, 0, 35, 55, -1, 20, 2, 0, 3, 1, 9, 33, 4, 2, 11, 9, 36, 2, 37, 26, 38, 2, 39, 2, 40, 15, 41, 15, 42, 15, 43, 10, 44, 10, 45, 10, 46, 10, 47, 10, 48, 11, 49, 29, 50, 28, 0, 0, 0, 1, 56, -1, 4, 2, 0, 3, 1, 4, 2, 5, 34, 0, 11, 0, 57, 57, -1, 18, 2, 0, 3, 1, 9, 35, 4, 2, 11, 9, 36, 2, 37, 36, 38, 2, 39, 2, 40, 15, 41, 15, 42, 15, 43, 10, 44, 10, 45, 10, 46, 10, 47, 10, 48, 11, 0, 11, 0, 57, 58, -1, 18, 2, 0, 3, 1, 9, 37, 4, 2, 11, 9, 36, 2, 37, 36, 38, 2, 39, 2, 40, 15, 41, 15, 42, 15, 43, 10, 44, 10, 45, 10, 46, 10, 47, 10, 48, 11, 0, 0, 0, 57, 59, -1, 19, 2, 0, 3, 1, 9, 38, 4, 2, 11, 9, 36, 2, 37, 39, 38, 10, 39, 2, 40, 15, 41, 15, 42, 15, 43, 10, 44, 10, 45, 10, 46, 10, 47, 10, 48, 11, 6, 40, 0, 14, 0, 60, 60, -1, 15, 2, 0, 3, 1, 4, 2, 61, 2, 62, 10, 63, 9, 64, 41, 65, 1, 66, 10, 11, 9, 67, 42, 68, 15, 69, 43, 70, 43, 6, 44, 0, 15, 0, 71, 71, -1, 5, 2, 0, 3, 1, 4, 2, 72, 41, 73, 10, 0 </int_array>
+			<string> "variants" </string>
+			<array  len="45" shared="false">
+				<node_path> "" </node_path>
+				<transform> 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 </transform>
+				<bool> True </bool>
+				<resource  resource_type="Script" path="../../script/scene/scn_dev.gd">  </resource>
+				<dictionary  shared="false">
+					<string> "__editor_plugin_screen__" </string>
+					<string> "3D" </string>
+					<string> "__editor_plugin_states__" </string>
+					<dictionary  shared="false">
+						<string> "2D" </string>
+						<dictionary  shared="false">
+							<string> "ofs" </string>
+							<vector2> 1, 1 </vector2>
+							<string> "snap_grid" </string>
+							<bool> False </bool>
+							<string> "snap_offset" </string>
+							<vector2> 0, 0 </vector2>
+							<string> "snap_pixel" </string>
+							<bool> False </bool>
+							<string> "snap_relative" </string>
+							<bool> False </bool>
+							<string> "snap_rotation" </string>
+							<bool> False </bool>
+							<string> "snap_rotation_offset" </string>
+							<real> 0 </real>
+							<string> "snap_rotation_step" </string>
+							<real> 0.261799 </real>
+							<string> "snap_show_grid" </string>
+							<bool> False </bool>
+							<string> "snap_step" </string>
+							<vector2> 10, 10 </vector2>
+							<string> "zoom" </string>
+							<real> 1 </real>
+						</dictionary>
+						<string> "3D" </string>
+						<dictionary  shared="false">
+							<string> "ambient_light_color" </string>
+							<color> 0.15, 0.15, 0.15, 1 </color>
+							<string> "default_light" </string>
+							<bool> False </bool>
+							<string> "default_srgb" </string>
+							<bool> False </bool>
+							<string> "deflight_rot_x" </string>
+							<real> 0.942478 </real>
+							<string> "deflight_rot_y" </string>
+							<real> 0.628319 </real>
+							<string> "fov" </string>
+							<real> 45 </real>
+							<string> "show_grid" </string>
+							<bool> True </bool>
+							<string> "show_origin" </string>
+							<bool> True </bool>
+							<string> "viewport_mode" </string>
+							<int> 4 </int>
+							<string> "viewports" </string>
+							<array  len="4" shared="false">
+								<dictionary  shared="false">
+									<string> "distance" </string>
+									<real> 30715216 </real>
+									<string> "listener" </string>
+									<bool> True </bool>
+									<string> "pos" </string>
+									<vector3> 0, 0, 0 </vector3>
+									<string> "use_environment" </string>
+									<bool> False </bool>
+									<string> "use_orthogonal" </string>
+									<bool> False </bool>
+									<string> "x_rot" </string>
+									<real> 0.154204 </real>
+									<string> "y_rot" </string>
+									<real> 13.337489 </real>
+								</dictionary>
+								<dictionary  shared="false">
+									<string> "distance" </string>
+									<real> 23.303938 </real>
+									<string> "listener" </string>
+									<bool> False </bool>
+									<string> "pos" </string>
+									<vector3> -1.66019, -2.32916, -4.73493 </vector3>
+									<string> "use_environment" </string>
+									<bool> False </bool>
+									<string> "use_orthogonal" </string>
+									<bool> False </bool>
+									<string> "x_rot" </string>
+									<real> 0.433296 </real>
+									<string> "y_rot" </string>
+									<real> -25.662573 </real>
+								</dictionary>
+								<dictionary  shared="false">
+									<string> "distance" </string>
+									<real> 32.13847 </real>
+									<string> "listener" </string>
+									<bool> False </bool>
+									<string> "pos" </string>
+									<vector3> -5.63994, 0.528904, -7.31615 </vector3>
+									<string> "use_environment" </string>
+									<bool> False </bool>
+									<string> "use_orthogonal" </string>
+									<bool> False </bool>
+									<string> "x_rot" </string>
+									<real> 0.833296 </real>
+									<string> "y_rot" </string>
+									<real> 0.724999 </real>
+								</dictionary>
+								<dictionary  shared="false">
+									<string> "distance" </string>
+									<real> 4 </real>
+									<string> "listener" </string>
+									<bool> False </bool>
+									<string> "pos" </string>
+									<vector3> 0, 0, 0 </vector3>
+									<string> "use_environment" </string>
+									<bool> False </bool>
+									<string> "use_orthogonal" </string>
+									<bool> False </bool>
+									<string> "x_rot" </string>
+									<real> 0 </real>
+									<string> "y_rot" </string>
+									<real> 0 </real>
+								</dictionary>
+							</array>
+							<string> "zfar" </string>
+							<real> 500 </real>
+							<string> "znear" </string>
+							<real> 0.1 </real>
+						</dictionary>
+						<string> "Script" </string>
+						<dictionary  shared="false">
+							<string> "current" </string>
+							<int> 2 </int>
+							<string> "sources" </string>
+							<array  len="3" shared="false">
+								<string> "res://script/actor/act_player.gd" </string>
+								<string> "res://script/scene/scn_dev.gd" </string>
+								<string> "res://script/scene/scr_terrainChunkLoader.gd" </string>
+							</array>
+						</dictionary>
+					</dictionary>
+					<string> "__editor_run_settings__" </string>
+					<dictionary  shared="false">
+						<string> "custom_args" </string>
+						<string> "-l $scene" </string>
+						<string> "run_mode" </string>
+						<int> 0 </int>
+					</dictionary>
+				</dictionary>
+				<resource  resource_type="PackedScene" path="../subScene/character/char_player.xml">  </resource>
+				<transform> 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 15.2042, 0 </transform>
+				<dictionary  shared="false">
+					<string> "__editor_plugin_screen__" </string>
+					<string> "3D" </string>
+					<string> "__editor_plugin_states__" </string>
+					<dictionary  shared="false">
+						<string> "2D" </string>
+						<dictionary  shared="false">
+							<string> "ofs" </string>
+							<vector2> -835.92, -504.719 </vector2>
+							<string> "snap_grid" </string>
+							<bool> False </bool>
+							<string> "snap_offset" </string>
+							<vector2> 0, 0 </vector2>
+							<string> "snap_pixel" </string>
+							<bool> False </bool>
+							<string> "snap_relative" </string>
+							<bool> False </bool>
+							<string> "snap_rotation" </string>
+							<bool> False </bool>
+							<string> "snap_rotation_offset" </string>
+							<real> 0 </real>
+							<string> "snap_rotation_step" </string>
+							<real> 0.261799 </real>
+							<string> "snap_show_grid" </string>
+							<bool> False </bool>
+							<string> "snap_step" </string>
+							<vector2> 10, 10 </vector2>
+							<string> "zoom" </string>
+							<real> 0.487675 </real>
+						</dictionary>
+						<string> "3D" </string>
+						<dictionary  shared="false">
+							<string> "ambient_light_color" </string>
+							<color> 0.15, 0.15, 0.15, 1 </color>
+							<string> "default_light" </string>
+							<bool> True </bool>
+							<string> "default_srgb" </string>
+							<bool> False </bool>
+							<string> "deflight_rot_x" </string>
+							<real> 0.942478 </real>
+							<string> "deflight_rot_y" </string>
+							<real> 0.628319 </real>
+							<string> "fov" </string>
+							<real> 45 </real>
+							<string> "show_grid" </string>
+							<bool> True </bool>
+							<string> "show_origin" </string>
+							<bool> True </bool>
+							<string> "viewport_mode" </string>
+							<int> 1 </int>
+							<string> "viewports" </string>
+							<array  len="4" shared="false">
+								<dictionary  shared="false">
+									<string> "distance" </string>
+									<real> 11.748774 </real>
+									<string> "listener" </string>
+									<bool> True </bool>
+									<string> "pos" </string>
+									<vector3> 1.36592, 1.47729, -0.410881 </vector3>
+									<string> "use_environment" </string>
+									<bool> True </bool>
+									<string> "use_orthogonal" </string>
+									<bool> False </bool>
+									<string> "x_rot" </string>
+									<real> 0.2125 </real>
+									<string> "y_rot" </string>
+									<real> 0.425 </real>
+								</dictionary>
+								<dictionary  shared="false">
+									<string> "distance" </string>
+									<real> 4 </real>
+									<string> "listener" </string>
+									<bool> False </bool>
+									<string> "pos" </string>
+									<vector3> 0, 0, 0 </vector3>
+									<string> "use_environment" </string>
+									<bool> False </bool>
+									<string> "use_orthogonal" </string>
+									<bool> False </bool>
+									<string> "x_rot" </string>
+									<real> 0 </real>
+									<string> "y_rot" </string>
+									<real> 0 </real>
+								</dictionary>
+								<dictionary  shared="false">
+									<string> "distance" </string>
+									<real> 4 </real>
+									<string> "listener" </string>
+									<bool> False </bool>
+									<string> "pos" </string>
+									<vector3> -0.119593, -0.286577, 0.0731357 </vector3>
+									<string> "use_environment" </string>
+									<bool> False </bool>
+									<string> "use_orthogonal" </string>
+									<bool> False </bool>
+									<string> "x_rot" </string>
+									<real> 0 </real>
+									<string> "y_rot" </string>
+									<real> 0 </real>
+								</dictionary>
+								<dictionary  shared="false">
+									<string> "distance" </string>
+									<real> 4 </real>
+									<string> "listener" </string>
+									<bool> False </bool>
+									<string> "pos" </string>
+									<vector3> 0, 0, 0 </vector3>
+									<string> "use_environment" </string>
+									<bool> False </bool>
+									<string> "use_orthogonal" </string>
+									<bool> False </bool>
+									<string> "x_rot" </string>
+									<real> 0 </real>
+									<string> "y_rot" </string>
+									<real> 0 </real>
+								</dictionary>
+							</array>
+							<string> "zfar" </string>
+							<real> 500 </real>
+							<string> "znear" </string>
+							<real> 0.1 </real>
+						</dictionary>
+						<string> "Script" </string>
+						<dictionary  shared="false">
+							<string> "current" </string>
+							<int> 0 </int>
+							<string> "sources" </string>
+							<array  len="1" shared="false">
+								<string> "res://script/actor/act_player.gd" </string>
+							</array>
+						</dictionary>
+					</dictionary>
+					<string> "__editor_run_settings__" </string>
+					<dictionary  shared="false">
+						<string> "custom_args" </string>
+						<string> "-l $scene" </string>
+						<string> "run_mode" </string>
+						<int> 0 </int>
+					</dictionary>
+					<string> "__editor_show_subtree" </string>
+					<bool> True </bool>
+					<string> "_editor_collapsed" </string>
+					<bool> True </bool>
+				</dictionary>
+				<transform> 0.950669, -0.0784038, -0.300134, 0.0253717, -0.944638, 0.327131, -0.309167, -0.318609, -0.896049, 0, 7.72131, 0 </transform>
+				<int> 1 </int>
+				<bool> False </bool>
+				<int> 0 </int>
+				<real> 1.4 </real>
+				<color> 1, 0.928971, 0.860862, 1 </color>
+				<color> 1, 1, 1, 1 </color>
+				<real> 0 </real>
+				<real> 0.05 </real>
+				<real> 60 </real>
+				<resource name=""></resource>				<int> 3 </int>
+				<real> 15 </real>
+				<real> 0.01 </real>
+				<real> 2 </real>
+				<resource  resource_type="Environment" path="../../material/worldEnvironment/wen_dev.xml">  </resource>
+				<dictionary  shared="false">
+					<string> "_editor_collapsed" </string>
+					<bool> True </bool>
+				</dictionary>
+				<transform> 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.75551, 0, -4.71464 </transform>
+				<resource  resource_type="Material" path="../../material/material/mat_dock_pier.mtl">  </resource>
+				<resource  resource_type="Mesh" path="../../mesh/docks/pier/msh_dock_pier_02.msh">  </resource>
+				<node_path> ".." </node_path>
+				<resource  resource_type="Mesh" path="../../mesh/docks/pier/msh_dock_pier_01.msh">  </resource>
+				<resource  resource_type="Mesh" path="../../mesh/docks/stair/msh_dock_stairs_01.msh">  </resource>
+				<resource  resource_type="Mesh" path="../../mesh/docks/pier/msh_dock_pier45_01.msh">  </resource>
+				<transform> 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, -10.5899, -2.00066, -2.85264 </transform>
+				<transform> -4.37114e-008, 0, 1, 0, 1, 0, -1, 0, -4.37114e-008, -0.00242996, 0.00808811, -6.9008 </transform>
+				<resource  resource_type="Script" path="../../script/scene/scr_terrainChunkLoader.gd">  </resource>
+				<transform> 1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 1, 0 </transform>
+				<resource  resource_type="Material" path="../../material/material/mat_basicGrey_fresnel.xml">  </resource>
+				<transform> 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 2, 3 </transform>
+				<transform> 10, 0, 0, 0, 0.1, 0, 0, 0, 10, 0, 0, 0 </transform>
+				<resource  resource_type="Material" path="local://1">  </resource>
+				<dictionary  shared="false">
+					<string> "_editor_collapsed" </string>
+					<bool> True </bool>
+				</dictionary>
+				<resource  resource_type="Shape" path="local://2">  </resource>
+				<real> 1 </real>
+				<vector3> 0, 0, 0 </vector3>
+				<dictionary  shared="false">
+					<string> "_editor_collapsed" </string>
+					<bool> True </bool>
+				</dictionary>
+			</array>
+			<string> "version" </string>
+			<int> 1 </int>
+		</dictionary>
+
+	</main_resource>
+</resource_file>
