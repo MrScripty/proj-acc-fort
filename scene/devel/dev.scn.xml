@@ -214,19 +214,19 @@
 								</dictionary>
 								<dictionary  shared="false">
 									<string> "distance" </string>
-									<real> 23.303938 </real>
+									<real> 19.97937 </real>
 									<string> "listener" </string>
 									<bool> False </bool>
 									<string> "pos" </string>
-									<vector3> -1.66019, -2.32916, -4.73493 </vector3>
+									<vector3> -1.49469, 4.20172, -4.67031 </vector3>
 									<string> "use_environment" </string>
 									<bool> False </bool>
 									<string> "use_orthogonal" </string>
 									<bool> False </bool>
 									<string> "x_rot" </string>
-									<real> 0.433296 </real>
+									<real> 0.095796 </real>
 									<string> "y_rot" </string>
-									<real> -25.662573 </real>
+									<real> -24.400101 </real>
 								</dictionary>
 								<dictionary  shared="false">
 									<string> "distance" </string>
