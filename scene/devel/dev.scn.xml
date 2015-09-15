@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<resource_file type="PackedScene" subresource_count="13" version="1.1" version_name="Godot Engine v1.1.stable.d3b42e41b0">
+<resource_file type="PackedScene" subresource_count="16" version="1.1" version_name="Godot Engine v1.1.stable.d3b42e41b0">
 	<ext_resource path="res://script/scene/scn_dev.gd" type="Script"></ext_resource>
 	<ext_resource path="res://scene/subScene/character/char_player.xml" type="PackedScene"></ext_resource>
 	<ext_resource path="res://material/worldEnvironment/wen_dev.xml" type="Environment"></ext_resource>
-	<ext_resource path="res://material/material/mat_dock_pier.mtl" type="Material"></ext_resource>
 	<ext_resource path="res://mesh/docks/pier/msh_dock_pier_02.msh" type="Mesh"></ext_resource>
+	<ext_resource path="res://material/material/mat_dock_pier.mtl" type="Material"></ext_resource>
 	<ext_resource path="res://mesh/docks/pier/msh_dock_pier_01.msh" type="Mesh"></ext_resource>
 	<ext_resource path="res://mesh/docks/stair/msh_dock_stairs_01.msh" type="Mesh"></ext_resource>
 	<ext_resource path="res://mesh/docks/pier/msh_dock_pier45_01.msh" type="Mesh"></ext_resource>
 	<ext_resource path="res://script/scene/scr_terrainChunkLoader.gd" type="Script"></ext_resource>
 	<ext_resource path="res://material/material/mat_basicGrey_fresnel.xml" type="Material"></ext_resource>
+	<ext_resource path="res://mesh/fort/wall/msh_fort_wall_01.msh" type="Mesh"></ext_resource>
+	<ext_resource path="res://mesh/fort/wall/msh_fort_wall_02.msh" type="Mesh"></ext_resource>
+	<ext_resource path="res://mesh/fort/wall/msh_fort_wall_03.msh" type="Mesh"></ext_resource>
 	<resource type="FixedMaterial" path="local://1">
 		<bool name="flags/visible"> True </bool>
 		<bool name="flags/double_sided"> False </bool>
@@ -58,7 +61,7 @@
 			<string> "conns" </string>
 			<int_array  len="0"> 				 </int_array>
 			<string> "names" </string>
-			<string_array  len="74">
+			<string_array  len="78">
 				<string> "spt_dev_scn" </string>
 				<string> "Spatial" </string>
 				<string> "_import_path" </string>
@@ -133,13 +136,17 @@
 				<string> "CollisionShape" </string>
 				<string> "shape" </string>
 				<string> "trigger" </string>
+				<string> "spt_fort_wall" </string>
+				<string> "msh_fort_wall_01" </string>
+				<string> "msh_fort_wall_02" </string>
+				<string> "msh_fort_wall_03" </string>
 			</string_array>
 			<string> "node_count" </string>
-			<int> 17 </int>
+			<int> 21 </int>
 			<string> "nodes" </string>
-			<int_array  len="591"> 				-1, -1, 1, 0, -1, 5, 2, 0, 3, 1, 4, 2, 5, 3, 6, 4, 0, 0, 0, 8, 7, 5, 4, 2, 0, 3, 1, 9, 6, 6, 7, 0, 1, 0, 10, 10, -1, 23, 2, 0, 3, 1, 9, 8, 4, 2, 11, 9, 12, 2, 13, 10, 14, 11, 15, 12, 16, 13, 17, 14, 18, 2, 19, 15, 20, 16, 21, 15, 22, 17, 23, 15, 24, 18, 25, 11, 26, 19, 27, 20, 28, 21, 29, 22, 0, 0, 0, 31, 30, -1, 4, 2, 0, 3, 1, 4, 2, 32, 23, 0, 0, 0, 1, 33, -1, 4, 2, 0, 3, 1, 4, 2, 6, 24, 0, 4, 0, 35, 34, -1, 20, 2, 0, 3, 1, 9, 25, 4, 2, 11, 9, 36, 2, 37, 26, 38, 2, 39, 2, 40, 15, 41, 15, 42, 15, 43, 10, 44, 10, 45, 10, 46, 10, 47, 10, 48, 11, 49, 27, 50, 28, 0, 4, 0, 35, 51, -1, 19, 2, 0, 3, 1, 4, 2, 11, 9, 36, 2, 37, 26, 38, 2, 39, 2, 40, 15, 41, 15, 42, 15, 43, 10, 44, 10, 45, 10, 46, 10, 47, 10, 48, 11, 49, 29, 50, 28, 0, 4, 0, 35, 52, -1, 19, 2, 0, 3, 1, 4, 2, 11, 9, 36, 2, 37, 26, 38, 2, 39, 2, 40, 15, 41, 15, 42, 15, 43, 10, 44, 10, 45, 10, 46, 10, 47, 10, 48, 11, 49, 30, 50, 28, 0, 4, 0, 35, 53, -1, 19, 2, 0, 3, 1, 4, 2, 11, 9, 36, 2, 37, 26, 38, 2, 39, 2, 40, 15, 41, 15, 42, 15, 43, 10, 44, 10, 45, 10, 46, 10, 47, 10, 48, 11, 49, 31, 50, 28, 0, 4, 0, 35, 54, -1, 20, 2, 0, 3, 1, 9, 32, 4, 2, 11, 9, 36, 2, 37, 26, 38, 2, 39, 2, 40, 15, 41, 15, 42, 15, 43, 10, 44, 10, 45, 10, 46, 10, 47, 10, 48, 11, 49, 27, 50, 28, 0, 4, 0, 35, 55, -1, 20, 2, 0, 3, 1, 9, 33, 4, 2, 11, 9, 36, 2, 37, 26, 38, 2, 39, 2, 40, 15, 41, 15, 42, 15, 43, 10, 44, 10, 45, 10, 46, 10, 47, 10, 48, 11, 49, 29, 50, 28, 0, 0, 0, 1, 56, -1, 4, 2, 0, 3, 1, 4, 2, 5, 34, 0, 11, 0, 57, 57, -1, 18, 2, 0, 3, 1, 9, 35, 4, 2, 11, 9, 36, 2, 37, 36, 38, 2, 39, 2, 40, 15, 41, 15, 42, 15, 43, 10, 44, 10, 45, 10, 46, 10, 47, 10, 48, 11, 0, 11, 0, 57, 58, -1, 18, 2, 0, 3, 1, 9, 37, 4, 2, 11, 9, 36, 2, 37, 36, 38, 2, 39, 2, 40, 15, 41, 15, 42, 15, 43, 10, 44, 10, 45, 10, 46, 10, 47, 10, 48, 11, 0, 0, 0, 57, 59, -1, 19, 2, 0, 3, 1, 9, 38, 4, 2, 11, 9, 36, 2, 37, 39, 38, 10, 39, 2, 40, 15, 41, 15, 42, 15, 43, 10, 44, 10, 45, 10, 46, 10, 47, 10, 48, 11, 6, 40, 0, 14, 0, 60, 60, -1, 15, 2, 0, 3, 1, 4, 2, 61, 2, 62, 10, 63, 9, 64, 41, 65, 1, 66, 10, 11, 9, 67, 42, 68, 15, 69, 43, 70, 43, 6, 44, 0, 15, 0, 71, 71, -1, 5, 2, 0, 3, 1, 4, 2, 72, 41, 73, 10, 0 </int_array>
+			<int_array  len="745"> 				-1, -1, 1, 0, -1, 5, 2, 0, 3, 1, 4, 2, 5, 3, 6, 4, 0, 0, 0, 8, 7, 5, 4, 2, 0, 3, 1, 9, 6, 6, 7, 0, 1, 0, 10, 10, -1, 23, 2, 0, 3, 1, 9, 8, 4, 2, 11, 9, 12, 2, 13, 10, 14, 11, 15, 12, 16, 13, 17, 14, 18, 2, 19, 15, 20, 16, 21, 15, 22, 17, 23, 15, 24, 18, 25, 11, 26, 19, 27, 20, 28, 21, 29, 22, 0, 0, 0, 31, 30, -1, 4, 2, 0, 3, 1, 4, 2, 32, 23, 0, 0, 0, 1, 33, -1, 4, 2, 0, 3, 1, 4, 2, 6, 24, 0, 4, 0, 35, 34, -1, 20, 2, 0, 3, 1, 9, 25, 4, 2, 11, 9, 36, 2, 37, 18, 38, 2, 39, 2, 40, 15, 41, 15, 42, 15, 43, 10, 44, 10, 45, 10, 46, 10, 47, 10, 48, 11, 49, 26, 50, 27, 0, 4, 0, 35, 51, -1, 19, 2, 0, 3, 1, 4, 2, 11, 9, 36, 2, 37, 28, 38, 2, 39, 2, 40, 15, 41, 15, 42, 15, 43, 10, 44, 10, 45, 10, 46, 10, 47, 10, 48, 11, 49, 29, 50, 27, 0, 4, 0, 35, 52, -1, 19, 2, 0, 3, 1, 4, 2, 11, 9, 36, 2, 37, 28, 38, 2, 39, 2, 40, 15, 41, 15, 42, 15, 43, 10, 44, 10, 45, 10, 46, 10, 47, 10, 48, 11, 49, 30, 50, 27, 0, 4, 0, 35, 53, -1, 19, 2, 0, 3, 1, 4, 2, 11, 9, 36, 2, 37, 28, 38, 2, 39, 2, 40, 15, 41, 15, 42, 15, 43, 10, 44, 10, 45, 10, 46, 10, 47, 10, 48, 11, 49, 31, 50, 27, 0, 4, 0, 35, 54, -1, 20, 2, 0, 3, 1, 9, 32, 4, 2, 11, 9, 36, 2, 37, 28, 38, 2, 39, 2, 40, 15, 41, 15, 42, 15, 43, 10, 44, 10, 45, 10, 46, 10, 47, 10, 48, 11, 49, 26, 50, 27, 0, 4, 0, 35, 55, -1, 20, 2, 0, 3, 1, 9, 33, 4, 2, 11, 9, 36, 2, 37, 28, 38, 2, 39, 2, 40, 15, 41, 15, 42, 15, 43, 10, 44, 10, 45, 10, 46, 10, 47, 10, 48, 11, 49, 29, 50, 27, 0, 0, 0, 1, 56, -1, 5, 2, 0, 3, 1, 4, 2, 5, 34, 6, 35, 0, 11, 0, 57, 57, -1, 18, 2, 0, 3, 1, 9, 36, 4, 2, 11, 9, 36, 2, 37, 37, 38, 2, 39, 2, 40, 15, 41, 15, 42, 15, 43, 10, 44, 10, 45, 10, 46, 10, 47, 10, 48, 11, 0, 11, 0, 57, 58, -1, 18, 2, 0, 3, 1, 9, 38, 4, 2, 11, 9, 36, 2, 37, 37, 38, 2, 39, 2, 40, 15, 41, 15, 42, 15, 43, 10, 44, 10, 45, 10, 46, 10, 47, 10, 48, 11, 0, 0, 0, 57, 59, -1, 19, 2, 0, 3, 1, 9, 39, 4, 2, 11, 9, 36, 2, 37, 40, 38, 10, 39, 2, 40, 15, 41, 15, 42, 15, 43, 10, 44, 10, 45, 10, 46, 10, 47, 10, 48, 11, 6, 41, 0, 14, 0, 60, 60, -1, 15, 2, 0, 3, 1, 4, 2, 61, 2, 62, 10, 63, 9, 64, 42, 65, 1, 66, 10, 11, 9, 67, 43, 68, 15, 69, 44, 70, 44, 6, 45, 0, 15, 0, 71, 71, -1, 5, 2, 0, 3, 1, 4, 2, 72, 42, 73, 10, 0, 0, 0, 1, 74, -1, 3, 2, 0, 3, 1, 4, 2, 0, 17, 0, 35, 75, -1, 19, 2, 0, 3, 1, 4, 2, 11, 9, 36, 2, 37, 18, 38, 2, 39, 2, 40, 15, 41, 15, 42, 15, 43, 10, 44, 10, 45, 10, 46, 10, 47, 10, 48, 11, 49, 46, 50, 27, 0, 17, 0, 35, 76, -1, 20, 2, 0, 3, 1, 9, 47, 4, 2, 11, 9, 36, 2, 37, 18, 38, 2, 39, 2, 40, 15, 41, 15, 42, 15, 43, 10, 44, 10, 45, 10, 46, 10, 47, 10, 48, 11, 49, 48, 50, 27, 0, 17, 0, 35, 77, -1, 20, 2, 0, 3, 1, 9, 49, 4, 2, 11, 9, 36, 2, 37, 18, 38, 2, 39, 2, 40, 15, 41, 15, 42, 15, 43, 10, 44, 10, 45, 10, 46, 10, 47, 10, 48, 11, 49, 50, 50, 27, 0 </int_array>
 			<string> "variants" </string>
-			<array  len="45" shared="false">
+			<array  len="51" shared="false">
 				<node_path> "" </node_path>
 				<transform> 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 </transform>
 				<bool> True </bool>
@@ -214,19 +221,19 @@
 								</dictionary>
 								<dictionary  shared="false">
 									<string> "distance" </string>
-									<real> 19.97937 </real>
+									<real> 20.55772 </real>
 									<string> "listener" </string>
 									<bool> False </bool>
 									<string> "pos" </string>
-									<vector3> -1.49469, 4.20172, -4.67031 </vector3>
+									<vector3> -4.20128, 1.71822, -10.5589 </vector3>
 									<string> "use_environment" </string>
 									<bool> False </bool>
 									<string> "use_orthogonal" </string>
 									<bool> False </bool>
 									<string> "x_rot" </string>
-									<real> 0.095796 </real>
+									<real> 0.383297 </real>
 									<string> "y_rot" </string>
-									<real> -24.400101 </real>
+									<real> -11.650167 </real>
 								</dictionary>
 								<dictionary  shared="false">
 									<string> "distance" </string>
@@ -429,8 +436,6 @@
 					</dictionary>
 					<string> "__editor_show_subtree" </string>
 					<bool> True </bool>
-					<string> "_editor_collapsed" </string>
-					<bool> True </bool>
 				</dictionary>
 				<transform> 0.950669, -0.0784038, -0.300134, 0.0253717, -0.944638, 0.327131, -0.309167, -0.318609, -0.896049, 0, 7.72131, 0 </transform>
 				<int> 1 </int>
@@ -452,15 +457,19 @@
 					<bool> True </bool>
 				</dictionary>
 				<transform> 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.75551, 0, -4.71464 </transform>
-				<resource  resource_type="Material" path="../../material/material/mat_dock_pier.mtl">  </resource>
 				<resource  resource_type="Mesh" path="../../mesh/docks/pier/msh_dock_pier_02.msh">  </resource>
 				<node_path> ".." </node_path>
+				<resource  resource_type="Material" path="../../material/material/mat_dock_pier.mtl">  </resource>
 				<resource  resource_type="Mesh" path="../../mesh/docks/pier/msh_dock_pier_01.msh">  </resource>
 				<resource  resource_type="Mesh" path="../../mesh/docks/stair/msh_dock_stairs_01.msh">  </resource>
 				<resource  resource_type="Mesh" path="../../mesh/docks/pier/msh_dock_pier45_01.msh">  </resource>
 				<transform> 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, -10.5899, -2.00066, -2.85264 </transform>
 				<transform> -4.37114e-008, 0, 1, 0, 1, 0, -1, 0, -4.37114e-008, -0.00242996, 0.00808811, -6.9008 </transform>
 				<resource  resource_type="Script" path="../../script/scene/scr_terrainChunkLoader.gd">  </resource>
+				<dictionary  shared="false">
+					<string> "_editor_collapsed" </string>
+					<bool> True </bool>
+				</dictionary>
 				<transform> 1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 1, 0 </transform>
 				<resource  resource_type="Material" path="../../material/material/mat_basicGrey_fresnel.xml">  </resource>
 				<transform> 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 2, 3 </transform>
@@ -477,6 +486,11 @@
 					<string> "_editor_collapsed" </string>
 					<bool> True </bool>
 				</dictionary>
+				<resource  resource_type="Mesh" path="../../mesh/fort/wall/msh_fort_wall_01.msh">  </resource>
+				<transform> -1, 0, 0.00018495, 0, 1, 0, -0.00018495, 0, -1, -8.02133, 0, -16.096 </transform>
+				<resource  resource_type="Mesh" path="../../mesh/fort/wall/msh_fort_wall_02.msh">  </resource>
+				<transform> 0.987805, 0, -0.155698, 0, 1, 0, 0.155698, 0, 0.987805, 0.944649, 0, 1.29404 </transform>
+				<resource  resource_type="Mesh" path="../../mesh/fort/wall/msh_fort_wall_03.msh">  </resource>
 			</array>
 			<string> "version" </string>
 			<int> 1 </int>
